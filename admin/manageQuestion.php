@@ -30,10 +30,31 @@
                     data:{ id: qid, action:"edit"},
                     dataType: "json"
                     }).done(function( msg ) {
-                        $('#tests').html(msg.question);
+                        $('#tests').html(msg.editdata);
                     });
                 }
             });
+
+            $('#tests').on('click','.update' ,function(){
+                var qid = $(this).data('id');
+                var answer = $('.answer').val();
+                var op1 = $('.op1').val();
+                var op2 = $('.op2').val();
+                var op3 = $('.op3').val();
+                var op4 = $('.op4').val();
+               
+                $.ajax({
+                method: "POST",
+                url: "fetchQuestions.php",
+                data:{ id:qid ,op1:op1 ,op2:op2 ,op3:op3 ,op4:op4 ,answer:answer ,action:'update'},
+                dataType: "json"
+                }).done(function( msg ) {
+                    if(msg.success != ''){
+                        alert(msg.success);
+                    }
+                });
+            });
+
 
             $( document ).ready( function() {
                 $.ajax({
@@ -51,10 +72,10 @@
                 $.ajax({
                 method: "POST" ,
                 url: "fetchQuestions.php",
-                data:{ id:tid , action:'ques'},
+                data:{ id:tid , action:''},
                 dataType: "json"
                 }).done(function( msg ) {
-                    console.log(msg.question);
+                    //console.log(msg.question);
                     $('#tests').html(msg.question);
                 });
             });
