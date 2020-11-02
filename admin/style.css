@@ -1,0 +1,87 @@
+
+#nav {
+    list-style-type: none;
+    margin-left: 5%;
+    padding: 0;
+    text-align: center;
+}
+
+#nav li {
+    display: block;
+    position: relative;
+    float: left;
+    background: black;
+}
+
+#nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 20px;
+    color: white;
+}
+#nav li:hover {
+    background: green;
+}
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+#signup-form {
+    margin-left: 5%;
+}
+#heading {
+    margin-left: 5%;
+    margin-top:5%;
+}
+#head {
+    margin-left: 5%;
+    margin-top:1%;
+}
+
+#test {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#tests {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#testd #test {
+    margin-left: 5%;
+    margin-top: 0%;
+}
+#testc #tests {
+    margin-left: 5%;
+    margin-top: 0%;
+}
+#question {
+    width : 85%;
+    text-align:center;
+    margin: 0%;
+}
+tr#question  td{
+    width:15%;
+}
+#users  {
+    margin: 5%;
+    width : 85%;
+    text-align:center;
+}
+#user #users {
+    margin-left: 5%;
+    margin-top: 0%;
+}
+.ques {
+    color: rgb(92, 92, 194);
+    
+}
+

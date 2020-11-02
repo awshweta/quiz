@@ -1,0 +1,68 @@
+#nav {
+    list-style-type: none;
+    margin-left: 5%;
+    padding: 0;
+    text-align: center;
+}
+
+#nav li {
+    display: block;
+    position: relative;
+    float: left;
+    background: black;
+}
+
+#nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 20px;
+    color: white;
+}
+#nav li:hover {
+    background: green;
+}
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+#tests {
+    margin-top: 8%;
+}
+#tests .start {
+    float: left;
+    width:16%;
+    height: 130px;
+    text-align: center;
+    background-color: rgb(39, 210, 240);
+    margin-right:5%;
+    margin-left:5%;
+    padding-top: 4%;
+ }
+ #tests .start a {
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ #tests .ques {
+   width:85%;
+   height:45px;
+   margin-top: 15%;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+ #tests .question {
+    margin-top: 8%;
+    margin-left: 5%;
+  }
+#result {
+    margin-left: 5%;
+}
